@@ -1,0 +1,460 @@
+/*
+    Document   : HomeworkFolder/ComversePage/css/style.css
+    Created on : 2015-03-02 05:27 PM
+    Author     : gadia
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+
+body,p,h1,h2,h3,h4,h5,h6,ul{
+
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+
+	list-style: none;
+}
+
+button{
+
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.clearfix:after{
+
+	content: '';
+	display: block;
+	clear: both;
+}
+
+header{
+
+	background-color:  #ffffff;
+	box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.09);
+	height: 90px;
+	position: relative;
+	z-index: 1000;
+}
+
+/*------------------------------Header-----------------------------------*/
+
+header .header-container{
+
+	width: 924px;
+	margin: 0 auto;
+
+}
+
+.header-container > img{
+
+	width: 120px;
+	height: 42px;
+	float: left;
+	padding-top: 35px;
+}
+
+
+.manu{
+
+	float: left;
+	padding-left: 30px;
+	padding-top: 60px;
+}
+
+.manu ul li{
+
+	display: inline;
+	padding: 0 12px;
+	border-right: 1px solid #F2E9E9;
+}
+
+.manu ul li:last-child{
+
+	border-right: none!important;
+}
+
+.manu ul li a{
+
+	color: #000;
+	font-size: 14px;
+}
+
+.header-container .searchNlang-wrapp{
+
+		float: left;
+		padding-left: 50px;
+		padding-top: 10px;
+}
+
+.user-options ul{
+
+	float: left;
+	padding-right: 15px;
+}
+
+.user-options ul li{
+
+	cursor: pointer;
+}
+
+.user-options ul li ul li{
+
+	display: none;
+	visibility: hidden;
+}
+
+.user-options span{
+
+	float: right;
+}
+
+.user-options span a{
+
+	color: #000;
+}
+
+.searchNlang-wrapp .search-input{
+
+	padding-top: 28px;
+}
+
+
+
+/*---------------------------------main-section-----------------------------------*/
+
+.main-sec{
+
+	height: 450px;
+	background: url("../images/Comverse_hp_A08.jpg") no-repeat;
+	background-size: 107% 100%;
+	background-position: 2px 0px;
+}
+
+.main-sec .main-container{
+
+	width: 924px;
+	margin: 0 auto;
+}
+
+.main-container .site-title{
+
+	width: 350px;
+	padding-top: 50px;
+}
+
+.site-title .title{
+
+	color: #fff;
+	font-size: 25px;
+}
+
+.site-title .title span{
+
+	font-weight: bold;
+}
+
+.site-title .subtitle{
+
+	color: #fff;
+}
+
+.site-title .subtitle span{
+
+	font-weight: bold;
+}
+
+.site-title p:nth-child(2){
+
+	margin-top: 20px;
+}
+
+.mainbutton-container{
+
+	margin-top: 20px;
+}
+
+.button{
+
+	width: 178px;
+	height: 34px;
+	border-radius: 6px;
+	background-color: #2793c9;
+	color: #fff;
+	text-align: left;
+	padding-left: 15px;
+	box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
+}
+
+.button .arrow{
+  width:0;
+  border-left: 12px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-radius: 3px;
+  float: right;
+
+}
+
+
+.rec-container{
+
+	margin-top: 50px;
+}
+
+.rec-container > div:nth-child(1){
+
+	margin-left: 0;
+	background-color: rgba(255, 51, 153, 0.9);
+}
+
+.rec-container > div:nth-child(2){
+
+	background-color: rgba(90, 190, 40,0.9);
+}
+
+.rec-container > div:nth-child(3){
+
+	background-color: rgba(255, 102, 0,0.9);
+}
+
+.rectangle{
+
+	width: 270px;
+	height: 155px;
+	box-shadow: 0px 1px 4px 0px #a2a2a2;
+	border-radius: 6px;
+	float: left;
+	margin-left: 57px;
+}
+
+.rec-content{
+
+	width: 250px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.rec-content p{
+	width: 240px;
+}
+
+.rec-content p.rec-sent{
+
+	color: #fff;
+	font-size: 22px;
+}
+
+.rec-content p.details{
+
+	color: #fff;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.details-container{
+
+	cursor: pointer;
+}
+
+.details-container img{
+	float: left;
+	margin-right: 5px;
+}
+
+
+/*-------------------------------solutions-section---------------------------------*/
+
+.solutions{
+
+	height: 400px;
+	background: url("../images/Comverse_hp_A08-2.jpg") no-repeat;
+}
+
+.solutions .solutions-wrapp{
+
+	width: 924px;
+	margin: 0 auto;
+}
+
+.solutions-wrapp > p{
+
+	text-align: center;
+	color: #fff;
+	font-size: 35px;
+	padding-top: 50px;
+}
+
+.s-iconswrapp{
+
+	padding: 0 72px;
+	margin-top: 30px;
+}
+
+.s-iconswrapp .icon{
+
+	float: left;
+}
+
+.slutionbutton-container{
+
+	margin-top: 40px;
+	margin-left: 40%;
+}
+
+
+/*-------------------------------events-section---------------------------------*/
+
+.events{
+
+	height: 410px;
+	background: url("../images/BG14.png") no-repeat center;
+	background-size: 100% 104%;
+}
+
+.events .events-wrapp{
+
+	width: 924px;
+	margin: 0 auto;
+}
+
+.events-wrapp > p{
+
+	text-align: center;
+	color: #fff;
+	font-size: 35px;
+	padding-top: 50px;
+}
+
+.boxes-wrapp{
+
+	margin-top: 40px;
+}
+
+.boxes-wrapp .box-container{
+
+	float: left;
+	margin-left: 18px;
+}
+
+
+.boxes-wrapp > div:nth-child(1){
+
+	margin-left: 0;
+}
+
+.box-container .box-title{
+
+	height: 27px;
+}
+
+.box-title > h1{
+
+	color: #fff;
+}
+
+.b-rec{
+
+	border-radius: 2px;
+	background-color:  rgba(255, 255, 255, 0.4);
+	box-shadow: 0px 1px 4px 0px #a2a2a2;
+	width: 296px;
+	height: 119px;
+	margin-top: 10px;
+}
+
+.b-rec-content{
+
+	width: 266px;
+	margin: 0 auto;
+	padding-top: 11px;
+}
+
+.b-rec-content > p{
+
+	width: 188px;
+	float: right;
+}
+
+
+.rec-date{
+
+	width: 69px;
+	height: 99px;
+	background-color: #3399cc;
+	float: left;
+}
+
+.rec-date .day{
+
+	color: #fff;
+	font-size: 48px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 5px;
+	border-bottom: 1px dotted #fff;
+}
+
+.rec-date .month{
+
+	color:  #fff;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.box-container .e-subtxt{
+
+	margin-top: 10px;
+}
+
+.e-subtxt{
+
+	cursor: pointer;
+}
+
+.e-subtxt img{
+
+	float: left;
+	margin-right: 5px;
+}
+
+.e-subtxt > p{
+
+	color: #fff;
+}
+
+/*-------------------------------success-section---------------------------------*/
+
+.success{
+
+	height: 440px;
+	background-color: #ececec;
+}
+
+.success .success-container{
+
+	width: 924px;
+	margin: 0 auto;
+}
+
+.success-container > p{
+
+	text-align: center;
+	color: #565656;
+	font-size: 35px;
+	padding: 50px;
+}

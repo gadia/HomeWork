@@ -35,6 +35,13 @@ button{
 	font-style: normal;
 }
 
+.clearfix:after{
+
+	content: '';
+	display: block;
+	clear: both;
+}
+
 header{
 
 	height: 70px;
@@ -121,6 +128,15 @@ header .header-container{
 	box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
 }
 
+/*
+.buttons-container button span:before{
+
+	font-family:'icons';
+	content: "\e250";
+	float: right;
+}
+*/
+
 .buttons-container button .arrow{
   width:0;
   border-left: 12px solid #fff;
@@ -176,4 +192,45 @@ header .header-container{
 	box-shadow: 0px 1px 4px 0px #a2a2a2;
 	width: 296px;
 	height: 119px;
+}
+
+.b-rec-content{
+
+	width: 266px;
+	margin: 0 auto;
+	padding-top: 11px;
+}
+
+.b-rec-content > p{
+
+	width: 188px;
+	float: right;
+}
+
+
+.rec-date{
+
+	width: 69px;
+	height: 99px;
+	background-color: #3399cc;
+	float: left;
+}
+
+.rec-date .day{
+
+	color: #fff;
+	font-size: 48px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 5px;
+	border-bottom: 1px dotted #fff;
+}
+
+.rec-date .month{
+
+	color:  #fff;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 5px;
 }
