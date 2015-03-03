@@ -40,6 +40,19 @@ button{
 	clear: both;
 }
 
+.site-wrapper{
+
+	width: 924px;
+	margin: 0 auto;
+}
+
+.txt-icons{
+
+	height: 21px;
+}
+
+/*------------------------------Header-----------------------------------*/
+
 header{
 
 	background-color:  #ffffff;
@@ -47,15 +60,6 @@ header{
 	height: 90px;
 	position: relative;
 	z-index: 1000;
-}
-
-/*------------------------------Header-----------------------------------*/
-
-header .header-container{
-
-	width: 924px;
-	margin: 0 auto;
-
 }
 
 .header-container > img{
@@ -95,7 +99,7 @@ header .header-container{
 .header-container .searchNlang-wrapp{
 
 		float: left;
-		padding-left: 50px;
+		padding-left: 72px;
 		padding-top: 10px;
 }
 
@@ -143,11 +147,6 @@ header .header-container{
 	background-position: 2px 0px;
 }
 
-.main-sec .main-container{
-
-	width: 924px;
-	margin: 0 auto;
-}
 
 .main-container .site-title{
 
@@ -191,7 +190,7 @@ header .header-container{
 	width: 178px;
 	height: 34px;
 	border-radius: 6px;
-	background-color: #2793c9;
+	background-color: #3399cc;
 	color: #fff;
 	text-align: left;
 	padding-left: 15px;
@@ -199,6 +198,7 @@ header .header-container{
 }
 
 .button .arrow{
+	
   width:0;
   border-left: 12px solid #fff;
   border-top: 8px solid transparent;
@@ -214,7 +214,7 @@ header .header-container{
 	margin-top: 50px;
 }
 
-.rec-container > div:nth-child(1){
+.rec-container > div:nth-child(1){	
 
 	margin-left: 0;
 	background-color: rgba(255, 51, 153, 0.9);
@@ -283,30 +283,35 @@ header .header-container{
 	background: url("../images/Comverse_hp_A08-2.jpg") no-repeat;
 }
 
-.solutions .solutions-wrapp{
-
-	width: 924px;
-	margin: 0 auto;
-}
 
 .solutions-wrapp > p{
 
 	text-align: center;
 	color: #fff;
 	font-size: 35px;
-	padding-top: 50px;
+	padding: 40px;
 }
 
 .s-iconswrapp{
 
-	padding: 0 72px;
+	padding: 0 25px;
 	margin-top: 30px;
 }
 
 .s-iconswrapp .icon{
 
 	float: left;
+	/*width: 130;*/
+	margin-left: 2%;
 }
+
+.icon .subtxt{
+
+	text-align: center;
+	color: #fff;
+	width: 121px;
+}
+
 
 .slutionbutton-container{
 
@@ -324,18 +329,13 @@ header .header-container{
 	background-size: 100% 104%;
 }
 
-.events .events-wrapp{
-
-	width: 924px;
-	margin: 0 auto;
-}
 
 .events-wrapp > p{
 
 	text-align: center;
 	color: #fff;
 	font-size: 35px;
-	padding-top: 50px;
+	padding: 40px;
 }
 
 .boxes-wrapp{
@@ -445,11 +445,6 @@ header .header-container{
 	background-color: #ececec;
 }
 
-.success .success-container{
-
-	width: 924px;
-	margin: 0 auto;
-}
 
 .success-container > p{
 
