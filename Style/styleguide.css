@@ -125,6 +125,8 @@ header .header-container{
 	width: 150px;
 	height: 40px;
 	margin: 5px;
+    text-align: center;
+	color: #fff;
 }
 
 .colors-container .color1{
@@ -309,7 +311,7 @@ header .header-container{
 
 .representives > q:before{
 
-	content: url("../assets/icons/Quote_2.png");
+	content: url("../images/icons/Quote_2.png");
 	display: inline-block;
 	margin-right: 8px;
 }
@@ -353,4 +355,148 @@ header .header-container{
 
 	width: 78.5px;
 	height: 65px;
+}
+
+.nav-bar{
+
+	background-color: #fff;
+	width: 420px;
+}
+
+.nav-bar ul li{
+
+	display: inline-block;
+	border-left: 1px solid #000;
+}
+
+.nav-bar ul li:first-child{
+  
+  border-left: none;
+}
+
+.nav-bar ul li a{
+  
+  padding: 0 10px;
+  color: #000;
+}
+
+.blog-posts{
+  width: 240px;
+  height: 280px;
+  background-color: rgba(225, 225, 225, 0.28);
+  padding: 15px;
+}
+
+
+.Posts-component{
+	padding: 50px;
+	height: 400px;
+	background-color: #000;
+}
+
+.posts{
+
+  border-bottom: 1px solid #6a6a6a;
+}
+
+.posts h4, .subscribe h4{
+  margin-top: 15px;
+  color: #4ea7d3;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+}
+
+.post-date{
+  
+  width: 79px;
+	height: 90px;
+	float: left;
+  margin-top: 10px;
+}
+
+.posts:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.post-date span{
+  color: #fff;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 3px;
+  display: block;
+}
+
+.post-day{
+	font-size: 45px;
+}
+
+.post-month{
+	font-size: 25px;
+}
+
+.posts p{
+ 	margin-top: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.email-form{
+display: inline-block;
+margin-top: 10px;
+}
+
+.email-form input{
+  
+  margin-top: 10px;
+  padding: 6px;
+  border: hidden;
+  border-radius: 2px;
+  outline: none;
+
+}
+
+
+.email-form input:nth-of-type(2){
+  margin-left: -10px;
+  border-width: 1px;
+  cursor: pointer;
+  color: #fff;
+  background: -webkit-linear-gradient(90deg, #2991c5 0%, #46b5ec 100%);
+  background: -moz-linear-gradient(90deg, #2991c5 0%, #46b5ec 100%);
+  background: -o-linear-gradient(90deg, #2991c5 0%, #46b5ec 100%);
+  background: -ms-linear-gradient(90deg, #2991c5 0%, #46b5ec 100%);
+  background: linear-gradient(0deg, #2991c5 0%, #46b5ec 100%);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.28);
+  
+}
+
+ul.social-networks{
+
+	margin-top: 40px;
+}
+
+ul.social-networks li{
+
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+
+ul.social-networks li:nth-child(1){
+
+	background: url("../assets/icons/YouTube_3.png") no-repeat;
+}
+
+ul.social-networks li:nth-child(2){
+
+	background: url("../assets/icons/Twitter.png") no-repeat;
+}
+
+ul.social-networks li:nth-child(3){
+
+	background: url("../assets/icons/LinkedIn.png") no-repeat;
 }
