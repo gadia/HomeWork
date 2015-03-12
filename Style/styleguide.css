@@ -11,17 +11,61 @@ root {
     display: block;
 }
 
-body,h1,h2,p{
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 
 button{
 
 	border: none;
 	outline: none;
 	cursor: pointer;
+}
+
+a{
+  text-decoration: none;
 }
 
 @font-face {
@@ -33,6 +77,17 @@ button{
 		url('../fonts/glyphicons-halflings-regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
+}
+
+body{
+
+	background-color: #B28686;
+}
+
+ul li{
+
+	display: inline-block;
+	list-style: none;
 }
 
 .clearfix:after{
@@ -64,10 +119,6 @@ header .header-container{
 	height: 400px;
 }
 
-.colors-container{
-
-	background-color: #9D2A2A;
-}
 
 .colors-container .color-block{
 
@@ -116,34 +167,31 @@ header .header-container{
 	height: 100px;
 }
 
-.buttons-container button{
+.button{
 
-	width: 178px;
+  	width: 150px;
 	height: 34px;
+  	display: block;
 	border-radius: 6px;
 	background-color: #2793c9;
 	color: #fff;
 	text-align: left;
 	padding-left: 15px;
 	box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
+  	line-height: 2.2;
 }
 
-/*
-.buttons-container button span:before{
 
-	font-family:'icons';
-	content: "\e250";
+.arrow{
+
+	width:0;
+	border-left: 12px solid #fff;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-radius: 2px;
 	float: right;
-}
-*/
-
-.buttons-container button .arrow{
-  width:0;
-  border-left: 12px solid #fff;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-radius: 3px;
-  float: right;
+	margin-top: 9px;
+	margin-right: 8px;
 }
 
 .colored-rec{
@@ -151,33 +199,31 @@ header .header-container{
 	height: 250px;
 }
 
-.rec-container .rectangle{
+.rectangle{
 
-	width: 290px;
+  	width: 290px;
 	height: 174px;
 	background-color: rgba(255, 51, 153, 0.9);
 	box-shadow: 0px 1px 4px 0px #a2a2a2;
 	border-radius: 6px;
+  	padding: 5px;
 }
 
-.rec-content{
+.rec-sent{
 
-	width: 266px;
-	margin: 0 auto;
-}
-
-.rec-content p.rec-sent{
-
-	color: #fff;
+  	color: #fff;
 	font-size: 24px;
-	padding-top: 10px;
+	margin-top: 10px;
+  	margin-left: 15px;
 }
 
-.rec-content p.details{
+.details{
 
-	color: #fff;
+  	color: #fff;
 	font-weight: bold;
-	margin-top: 40px;
+  	margin-top: 60px;
+  	display: inline-block;
+  	margin-left: 15px;
 }
 
 .blured-recs{
@@ -185,35 +231,27 @@ header .header-container{
 	height: 200px;
 }
 
-.blured-container .b-rec{
-
-	border-radius: 2px;
+.b-rec{
+  	border-radius: 2px;
 	background-color:  rgba(255, 255, 255, 0.4);
 	box-shadow: 0px 1px 4px 0px #a2a2a2;
-	width: 296px;
+	width: 275px;
 	height: 119px;
+  	padding: 0 10px;
 }
 
-.b-rec-content{
-
-	width: 266px;
-	margin: 0 auto;
-	padding-top: 11px;
-}
-
-.b-rec-content > p{
-
-	width: 188px;
+.b-rec p {
+  	width: 188px;
 	float: right;
-}
-
+ 	margin-top: 10px;
+}	
 
 .rec-date{
-
-	width: 69px;
+  	width: 69px;
 	height: 99px;
 	background-color: #3399cc;
 	float: left;
+  	margin-top: 10px;
 }
 
 .rec-date .day{
@@ -224,6 +262,7 @@ header .header-container{
 	text-align: center;
 	margin-top: 5px;
 	border-bottom: 1px dotted #fff;
+  	display: block;
 }
 
 .rec-date .month{
@@ -233,4 +272,85 @@ header .header-container{
 	font-weight: 400;
 	text-align: center;
 	margin-top: 5px;
+  	display: block;
+}
+
+.stories-box{
+
+	width: 323px;
+	height: 291px;
+  
+}
+
+.representives{
+
+	height: 155px;
+	background-color: #fff;
+	padding: 12px;
+}
+
+.representives > img{
+
+	width: 73px;
+	height: 85px;
+	float: left;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+
+.representives > q{
+
+	font-size: 20px;
+	margin-left: 90px;
+	display: block;
+	width: 192px;
+	margin-top: 5px;
+}
+
+.representives > q:before{
+
+	content: url("../assets/icons/Quote_2.png");
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.representives footer{
+
+	clear: both;
+	border-top: 1px solid #000;
+	padding-top: 10px;
+}
+
+.representives footer h5{
+
+	display: inline;
+}
+
+.representives footer img{
+
+	width: 50px;
+	height: 26px;
+	float: right;
+	margin-top: -10px;
+}
+
+.rep-logo{
+
+	margin-top: 5.5px;
+	margin-left: 3.5px;
+	background-color: #fff;
+	display: inline-block;
+	list-style: none;
+	padding: 12px;
+}
+
+.rep-logo:first-of-type{
+
+	margin-left: 0;
+}
+
+.stories-logo{
+
+	width: 78.5px;
+	height: 65px;
 }
