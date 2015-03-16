@@ -1,6 +1,6 @@
 /*
-    Document   : HomeworkFolder/ComversePage/css/style.css
-    Created on : 2015-03-02 05:27 PM
+    Document   : HomeworkFolder/StyleGuide/css/styleguide.css
+    Created on : 2015-03-01 07:15 PM
     Author     : gadia
     Description:
     Purpose of the stylesheet follows.
@@ -11,26 +11,56 @@ root {
     display: block;
 }
 
-body,p,h1,h2,h3,h4,h5,h6,ul{
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 a{
-	text-decoration: none;
+    text-decoration: none;
 }
 
-li{
-
-	list-style: none;
-}
-
-button{
-
-	border: none;
-	outline: none;
-	cursor: pointer;
+ul li{
+    list-style: none;
 }
 
 .clearfix:after{
@@ -40,361 +70,326 @@ button{
 	clear: both;
 }
 
-.site-wrapper{
-
-	width: 924px;
-	margin: 0 auto;
-}
-
-.txt-icons{
-
-	height: 21px;
-}
-
-/*------------------------------Header-----------------------------------*/
-
-header{
-
-	background-color:  #ffffff;
-	box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.09);
-	height: 90px;
-	position: relative;
-	z-index: 1000;
-}
-
-.header-container > img{
-
-	width: 120px;
-	height: 42px;
-	float: left;
-	padding-top: 35px;
-}
-
-
-.manu{
-
-	float: left;
-	padding-left: 30px;
-	padding-top: 60px;
-}
-
-.manu ul li{
-
-	display: inline;
-	padding: 0 12px;
-	border-right: 1px solid #F2E9E9;
-}
-
-.manu ul li:last-child{
-
-	border-right: none!important;
-}
-
-.manu ul li a{
-
-	color: #000;
-	font-size: 14px;
-}
-
-.header-container .searchNlang-wrapp{
-
-		float: left;
-		padding-left: 72px;
-		padding-top: 10px;
-}
-
-.user-options ul{
-
-	float: left;
-	padding-right: 15px;
-}
-
-.user-options ul li{
-
-	cursor: pointer;
-}
-
-.user-options ul li ul li{
-
-	display: none;
-	visibility: hidden;
-}
-
-.user-options span{
-
-	float: right;
-}
-
-.user-options span a{
-
-	color: #000;
-}
-
-.searchNlang-wrapp .search-input{
-
-	padding-top: 28px;
+.site-struct{
+    
+    margin: 0 auto;
+    width: 904px;
+    padding-top: 10px;
 }
 
 
 
-/*---------------------------------main-section-----------------------------------*/
+/*------------------------------------Header Section-----------------------------------*/
 
-.main-sec{
+.site-header{
+    height: 75px;
+}
 
-	height: 450px;
-	background: url("../assets/Comverse_hp_A08.jpg") no-repeat;
-	background-size: 107% 100%;
-	background-position: 2px 0px;
+.logo{
+    
+    width: 140px;
+    height: 50px;
+}
+
+.manu-bar{
+    display: inline-block;
+    margin: 0 70px;
+}
+
+.manu-bar ul li{
+    display: inline;
+    border-right: 1px solid #d0d0d0;
+    padding: 0 10px;
+}
+
+.manu-bar ul li a{
+    color: #000;
+}
+
+.options{
+    display: inline-block;
+}
+
+.options .lang, .options .login{
+    margin-bottom: 20px;
+}
+
+input[name="search"]{
+    display: block;
 }
 
 
-.main-container .site-title{
 
-	width: 350px;
-	padding-top: 50px;
+/*------------------------------------main-section-----------------------------------*/
+
+.main-section{
+    background: url("../assets/Comverse_hp_A08.jpg");
+    height: 500px;
 }
 
-.site-title .title{
-
-	color: #fff;
-	font-size: 25px;
+.site-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    width: 380px;
+    color: #fff;
 }
 
-.site-title .title span{
-
-	font-weight: bold;
+.site-title > span{
+    
+    font-weight: bold;
 }
 
-.site-title .subtitle{
-
-	color: #fff;
+.sub-title{
+    color: #fff;
 }
 
-.site-title .subtitle span{
-
-	font-weight: bold;
-}
-
-.site-title p:nth-child(2){
-
-	margin-top: 20px;
-}
-
-.mainbutton-container{
-
-	margin-top: 20px;
+.sub-title > span{
+    font-weight: bold;
 }
 
 .button{
 
-	width: 178px;
-	height: 34px;
-	border-radius: 6px;
-	background-color: #3399cc;
-	color: #fff;
-	text-align: left;
-	padding-left: 15px;
-	box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
+  width: 172px;
+  height: 32px;
+  display: block;
+  border-radius: 6px;
+  background-color: #2793c9;
+  color: #fff;
+  text-align: left;
+  padding-left: 15px;
+  box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
+  line-height: 2;
+  margin: 15px 0;
 }
 
-.button .arrow{
-	
-  width:0;
-  border-left: 12px solid #fff;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-radius: 3px;
+
+.arrow{
+
+  width: 0;
+  border-left: 10px solid #fff;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-radius: 2px;
   float: right;
-
+  margin-top: 10px;
+  margin-right: 12px;
 }
 
 
-.rec-container{
 
-	margin-top: 50px;
+.carusel li{
+    display: inline;
+    margin: 0 2px;
 }
 
-.rec-container > div:nth-child(1){	
-
-	margin-left: 0;
-	background-color: rgba(255, 51, 153, 0.9);
+.carusel li > a{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #e5e5e5;
 }
 
-.rec-container > div:nth-child(2){
-
-	background-color: rgba(90, 190, 40,0.9);
+.carusel li:first-child > a{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #2e95ca;
+    border-radius: 2px;
 }
 
-.rec-container > div:nth-child(3){
-
-	background-color: rgba(255, 102, 0,0.9);
+.articles{
+    margin-top: 50px;
 }
 
 .rectangle{
 
-	width: 270px;
-	height: 155px;
+    width: 280px;
+    height: 164px;
+	background-color: rgba(255, 51, 153, 0.9);
 	box-shadow: 0px 1px 4px 0px #a2a2a2;
 	border-radius: 6px;
-	float: left;
-	margin-left: 57px;
+  	padding: 5px;
+    display: inline-block;
 }
 
-.rec-content{
-
-	width: 250px;
-	margin: 0 auto;
-	padding: 5px;
+.articles li:nth-child(2),
+.articles li:nth-child(3){
+    margin-left: 13px;
 }
 
-.rec-content p{
-	width: 240px;
+.articles li:nth-child(2){
+    background-color: rgba(90, 190, 40,0.9);
 }
 
-.rec-content p.rec-sent{
-
-	color: #fff;
-	font-size: 22px;
+.articles li:nth-child(3){
+    background-color: rgba(255, 102, 0,0.9);
 }
 
-.rec-content p.details{
+.rec-sent{
 
-	color: #fff;
+  	color: #fff;
+	font-size: 24px;
+	margin-top: 10px;
+  	margin-left: 15px;
+}
+
+.details{
+
+  	color: #fff;
 	font-weight: bold;
-	margin-top: 30px;
+  	margin-top: 60px;
+  	display: inline-block;
+  	margin-left: 15px;
 }
 
-.details-container{
-
-	cursor: pointer;
+.details:before{
+    
+    content: url("../assets/icons/Link2.png");
+    display: inline-block;
+    vertical-align: sub;
+    margin-right: 5px;
+    transform: scale(.8);
+    
 }
 
-.details-container img{
-	float: left;
-	margin-right: 5px;
-}
 
-
-/*-------------------------------solutions-section---------------------------------*/
+/*------------------------------------solutions-section-----------------------------------*/
 
 .solutions{
-
-	height: 400px;
-	background: url("../assets/Comverse_hp_A08-2.jpg") no-repeat;
+    background: url("../assets/Comverse_hp_A08-2.jpg");
+    height: 380px;
 }
 
-
-.solutions-wrapp > p{
-
-	text-align: center;
-	color: #fff;
-	font-size: 35px;
-	padding: 40px;
+.solutions-title{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin: 30px 0;
 }
 
-.s-iconswrapp{
-
-	padding: 0 25px;
-	margin-top: 30px;
+.solution-list{
+    margin: 0 auto;
+    width: 830px;
 }
 
-.s-iconswrapp .icon{
-
-	float: left;
-	/*width: 130;*/
-	margin-left: 2%;
+.solution-list li{
+    display: inline-block;
+    vertical-align: top;
+    width: 129px;
+    margin: 0 3px;
 }
 
-.icon .subtxt{
-
-	text-align: center;
-	color: #fff;
-	width: 121px;
+.solution-list li h3{
+    text-align: center;
 }
 
-
-.slutionbutton-container{
-
-	margin-top: 40px;
-	margin-left: 40%;
+.data div{
+    background: url("../assets/icons/Robot.png") no-repeat;
+    width: 100px;
+    height: 80px;    
+    background-size: 94px 77px;
+    background-position: 7px 0px;
 }
 
+.machine div{
+    background: url("../assets/icons/Robot.png") no-repeat;
+    width: 100px;
+    height: 80px;    
+    background-size: 94px 77px;
+    background-position: 7px 0px;
+}
 
-/*-------------------------------events-section---------------------------------*/
+.over div{
+    background: url("../assets/icons/otp.png") no-repeat;
+    width: 100px;
+    height: 80px;    
+    background-size: 94px 77px;
+    background-position: 7px 0px;
+}
+
+.cloud div{
+    background: url("../assets/icons/4.png") no-repeat center;
+    width: 129px;
+    height: 80px;    
+    background-size: 94px 77px;
+    background-position: 7px 0px;
+}
+
+.managed div{
+    background: url("../assets/icons/Vector_Smart_Object.png") no-repeat center;
+    width: 129px;
+    height: 80px;    
+    background-size: 94px 77px;
+    background-position: 7px 0px;
+}
+
+.social div{
+    background: url("../assets/icons/Speech_Bubble.png") no-repeat center;
+    width: 129px;
+    height: 80px;    
+    background-size: 94px 77px;
+    background-position: 7px 0px;
+}
+
+.solutions .button{
+    margin: 60px auto;
+
+}
+
+/*------------------------------------news-events-section-----------------------------------*/
+
+
+.news-events{
+    background: url("../assets/BG14.png");
+    height: 410px;
+}
+
+.events-title{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding: 30px 0;
+}
+
 
 .events{
-
-	height: 410px;
-	background: url("../assets/BG14.png") no-repeat center;
-	background-size: 100% 104%;
+    
+    display: inline-block;
 }
 
+.blured-recs{
 
-.events-wrapp > p{
-
-	text-align: center;
-	color: #fff;
-	font-size: 35px;
-	padding: 40px;
+	height: 200px;
 }
 
-.boxes-wrapp{
-
-	margin-top: 40px;
+.blured-title{
+  font-size: 32px;
+  padding-bottom: 10px;
+  color: #fff;
 }
 
-.boxes-wrapp .box-container{
-
-	float: left;
-	margin-left: 18px;
-}
-
-
-.boxes-wrapp > div:nth-child(1){
-
-	margin-left: 0;
-}
-
-.box-container .box-title{
-
-	height: 27px;
-}
-
-.box-title > h1{
-
-	color: #fff;
-}
-
-.b-rec{
-
-	border-radius: 2px;
+.blured-rec{
+  	border-radius: 2px;
 	background-color:  rgba(255, 255, 255, 0.4);
 	box-shadow: 0px 1px 4px 0px #a2a2a2;
-	width: 296px;
+	width: 275px;
 	height: 119px;
-	margin-top: 10px;
+  	padding: 0 10px;
 }
 
-.b-rec-content{
-
-	width: 266px;
-	margin: 0 auto;
-	padding-top: 11px;
-}
-
-.b-rec-content > p{
-
-	width: 188px;
+.blured-rec p {
+  	width: 188px;
 	float: right;
-}
-
+ 	margin-top: 10px;
+}	
 
 .rec-date{
-
-	width: 69px;
+  	width: 69px;
 	height: 99px;
 	background-color: #3399cc;
 	float: left;
+  	margin-top: 10px;
 }
 
 .rec-date .day{
@@ -405,6 +400,7 @@ header{
 	text-align: center;
 	margin-top: 5px;
 	border-bottom: 1px dotted #fff;
+  	display: block;
 }
 
 .rec-date .month{
@@ -414,42 +410,34 @@ header{
 	font-weight: 400;
 	text-align: center;
 	margin-top: 5px;
+  	display: block;
 }
 
-.box-container .e-subtxt{
-
-	margin-top: 10px;
+.blured-container a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 10px;
 }
 
-.e-subtxt{
-
-	cursor: pointer;
+.blured-container a .icons:nth-of-type(1){
+  background: url("../assets/icons/calendar-icon.png") no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 22px;
+    margin-right: 7px;
 }
 
-.e-subtxt img{
+/*------------------------------------stories-section-----------------------------------*/
 
-	float: left;
-	margin-right: 5px;
-}
-
-.e-subtxt > p{
-
-	color: #fff;
-}
-
-/*-------------------------------success-section---------------------------------*/
-
-.success{
-
-	height: 440px;
-	background-color: #ececec;
+.stories{
+    background-color: #ececec;
+    height: 440px;
 }
 
 
-.success-container > p{
+/*------------------------------------footer-section-----------------------------------*/
 
-	text-align: center;
-	color: #565656;
-	font-size: 35px;
-	padding: 50px;
+.site-footer{
+    background-color: #222222;
 }
