@@ -5,11 +5,12 @@ To change this template use Tools | Templates.
 <html>
 <head>
     <title>StyleGuide</title>
+    <link href="Style/style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="Style/styleguide.css">
 </head>
 <body>
     
-    <div class="content">
+    <main class="content">
 		<header>
 			<div class="header-container">
 				<h1>Style Guide</h1>
@@ -28,134 +29,214 @@ To change this template use Tools | Templates.
 				<div class="color-block color7">#3399cc</div>
 			</div>
 		</section>
+        
+        
+        <section class="header-components">
+            
+            <div class="logo-component space">
+                
+                <a href="#"><img class="logo" src="assets/icons/logo.png"></a>
+                
+            </div>
+            
+            <div class="manu-component space">
+                <nav class="manu-bar">
+                    <ul>
+                        <li><a href="#">your needs</a></li>
+                        <li><a href="#">our portfolio</a></li>
+                        <li><a href="#">news & media</a></li>
+                        <li><a href="#">about comverse</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="options-component space">
+                <div class="options">
+                    <select class="lang">
+                        <option>en</option>
+                        <option>he</option>
+                        <option>es</option>
+                    </select>
+                    <a href="#" class="login">customer login</a>
+                    <form>
+                        <input type="search" name="search">
+                        <input type="submit" name="submit" value="">
+                    </form>
 
-		<section class="buttons-section">
-			<div class="buttons-container">
+                </div>
+            </div>
+        </section>
+
+		<section class="main-section-components">
+			<div class="button-component space">
 				<h1>button</h1>
 				<a href="" class="button">learn more <span class="arrow"></span></a>
 			</div>
-		</section>
-
-		<section class="colored-rec">
-			<ul>
-				<li class="rectangle">
-					<h3 class="rec-sent">Comverse Is Value-Added Service Global Market Leader.</h3>
-  					<a href="" class="details">Read More</a>
-				</li>
-			</ul>
-		</section>
-
-		<section class="blured-recs">
-			<div class="blured-container">
-                <h4 class="blured-title">events</h4>
-				<article class="blured-rec clearfix">
-				    <time datetime="09-04" class="rec-date">
-					      <span class="day">04</span>
-					      <span class="month">SEP</span>
-				    </time>
-				    <p>Comverse Regains Lead in Convergent Charging Market Regains Lead in</p>
-				</article>
-                <a href="#"><span class="icons"><!--background image--></span>all news</a>
-			</div>
-		</section>
-
-		<section class="boxes-section">
-			
-			<div class="stories-box">
-			  <article class="representives">
-			    <img src="assets/icons/Sergey_korotych.jpg">
-			    <q>We have very good and very warm relations with Comverse. We always achievet.."</q>
-			    <footer>
-					<h4>SERGEY KOROTYCH</h4>
-			      <h5>Deputy CTO, 3 Mob Ukraine</h5>
-			      <img src="assets/icons/3mob_logo3.png">
-			    </footer>
-			  </article>
-			  <ul>
-			    <li class="rep-logo"><img class="stories-logo" src="assets/icons/Layer_102.png"></li>
-				<li class="rep-logo"><img class="stories-logo" src="assets/icons/Layer_103.png"></li>
-				<li class="rep-logo"><img class="stories-logo" src="assets/icons/Layer_101.png"></li>
-			  </ul>
-			</div>
-
-		</section>
-        
-        <section class="Posts-component">
-
-			<aside class="blog-posts">
-
-					<div class="posts">
-						<h4>LATEST BLOG POSTS</h4>
-						<time class="post-date" datetime="07-18">
-							<span class="post-day">18</span>
-							<span  class="post-month">July</span>
-						</time>
-						<p>Comverse Regains Lead in Convergent Charging Market</p>
-					</div>
-
-					<div class="subscribe">
-						<h4>SUBSCRIBE TO COMVERSE</h4>
-
-						<form class="email-form">
-							<input type="email">
-							<input type="button" value="SIGN UP" />
-						</form>
-
-						<ul class="social-networks">
-							<li class="youtube"></li>
-							<li class="tweeter"></li>
-							<li class="linkedin"></li>
-						</ul>
-					</div>
-
-				</aside>
-
-		</section>
-        
-        <section class="solutions">
             
-            <ul>
-				<li>
-					<a href="#">
-						<div class="icon"><!--background image--></div>
-						<h3>data monetization</h3>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="icon"><!--background image--></div>
-						<h3>machine to machine (M2M)</h3>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="icon"><!--background image--></div>
-						<h3>over-the-top (OTT)</h3>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="icon"><!--background image--></div>
-						<h3>cloud computing</h3>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="icon"><!--background image--></div>
-						<h3>manged services</h3>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="icon"><!--background image--></div>
-						<h3>social media</h3>
-					</a>
-				</li>
-			</ul>
+            <div class="carusel-component space">
+                <ol class="carusel">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ol>
+            </div>
             
+            <div class="colored-rec-component space">
+                <ul>
+                    <li class="rectangle">
+                        <h3 class="rec-sent">Comverse Is Value-Added Service Global Market Leader.</h3>
+                        <a href="" class="details">Read More</a>
+                    </li>
+                </ul>
+            </div>
+		</section>
+
+        <section class="solutions-components">
+            
+            <div class="icons-component space">
+                <ul class="solution-list">
+                        <li class="data">
+                            <a href="#">
+                                <div class="icon"><!--background image--></div>
+                                <h3>data monetization</h3>
+                            </a>
+                        </li>
+                        <li class="machine">
+                            <a href="#">
+                                <div class="icon"><!--background image--></div>
+                                <h3>machine to machine</h3>
+                                <h3>(M2M)</h3>
+                            </a>
+                        </li>
+                        <li class="over">
+                            <a href="#">
+                                <div class="icon"><!--background image--></div>
+                                <h3>over-the-top</h3>
+                                <h3>(OTT)</h3>
+                            </a>
+                        </li>
+                        <li class="cloud">
+                            <a href="#">
+                                <div class="icon"><!--background image--></div>
+                                <h3>cloud computing</h3>
+                            </a>
+                        </li>
+                        <li class="managed">
+                            <a href="#">
+                                <div class="icon"><!--background image--></div>
+                                <h3>manged services</h3>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a href="#">
+                                <div class="icon"><!--background image--></div>
+                                <h3>social media</h3>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        
         </section>
 
-	</div>
+		<section class="news-events-components">
+            <div class="blured-component space">
+                <div class="events">
+                    <h4 class="blured-title">events</h4>
+                    <article class="blured-rec clearfix">
+                        <time datetime="09-04" class="rec-date">
+                              <span class="day">04</span>
+                              <span class="month">SEP</span>
+                        </time>
+                        <p>Comverse Regains Lead in Convergent Charging Market Regains Lead in</p>
+                    </article>
+                    <a href="#"><span class="icons"><!--background image--></span>all news</a>
+                </div>
+            </div>
+		</section>
+
+		<section class="stories-components">
+			
+            <div class="stories-box-component space">
+            
+                <div class="stories-box">
+                        <article class="representives">
+                            <img src="assets/icons/Sergey_korotych.jpg">
+                            <q><span class="quote-mark"></span>we have very good and very warm relations with comverse. we always achievet.."</q>
+                            <footer>
+                                <h4>sergey korotych</h4>
+                                <h5>deputy CTO, 3 mob ukraine</h5>
+                                <img src="assets/icons/3mob_logo3.png">
+                            </footer>
+                        </article>
+                        <ul>
+                            <li class="rep-logo"><img class="stories-logo" src="assets/icons/Layer_102.png"></li>
+                            <li class="rep-logo"><img class="stories-logo" src="assets/icons/Layer_103.png"></li>
+                            <li class="rep-logo"><img class="stories-logo" src="assets/icons/Layer_101.png"></li>
+                        </ul>
+                    </div>
+                
+            </div>
+		</section>
+        
+        <section class="footer-components">
+            
+            <div class="navigation-component space">
+                
+                <div class="footer-navigation">
+                    <h2 class="links-titles">key solutions</h2>
+                    <ul>
+                        <li><a href="#">monetizing data</a></li>
+                        <li><a href="#">over the top (OTT)</a></li>
+                        <li><a href="#">machine to machine (M2M)</a></li>
+                        <li><a href="#">cloud computing</a></li>
+                        <li><a href="#">managed services</a></li>
+                        <li><a href="#">customer experience management</a></li>
+                        <li><a href="#">rich communication suite</a></li>
+                        <li><a href="#">social media</a></li>
+                        <li><a href="#">4G/LTE</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            
+            <div class="blog-posts-component space">
+                
+                <aside class="blog-posts">
+
+                        <div class="posts">
+                            <h4>LATEST BLOG POSTS</h4>
+                            <time class="post-date" datetime="07-18">
+                                <span class="post-day">18</span>
+                                <span  class="post-month">July</span>
+                            </time>
+                            <p>Comverse Regains Lead in Convergent Charging Market</p>
+                        </div>
+
+                        <div class="subscribe">
+                            <h4>SUBSCRIBE TO COMVERSE</h4>
+
+                            <form class="email-form">
+                                <input type="email">
+                                <input type="button" value="SIGN UP" />
+                            </form>
+
+                            <ul class="social-networks">
+                                <li class="youtube"></li>
+                                <li class="tweeter"></li>
+                                <li class="linkedin"></li>
+                            </ul>
+                        </div>
+
+                </aside>
+                
+            </div>
+		</section>
+        
+
+
+	</main>
 
 </body>
 </html>
