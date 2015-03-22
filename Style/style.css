@@ -73,7 +73,7 @@ ul li{
 .site-struct{
     
     margin: 0 auto;
-    width: 67.4%;
+    width: 904px;
 }
 
 
@@ -100,6 +100,7 @@ ul li{
 .manu-bar{
     display: inline-block;
     margin: 0 48px;
+    position: relative;
 }
 
 .manu-bar ul li{
@@ -108,12 +109,39 @@ ul li{
     padding: 0 10px;
 }
 
+.manu-bar ul li:hover{
+  border: 1px solid #D5D5D5;
+  border-bottom: none;
+  background: #fcfcfc;
+  padding: 10px 10px 16px 9px;
+
+}
+
 .manu-bar ul li a{
     color: #000;
 }
 
+
 .manu-bar ul li:hover > a{
     color: #3399cc;
+}
+
+
+.sub-manu{
+    display: none;
+    width: 905px;
+    height: 260px;
+    background: #fcfcfc;
+    position: absolute;
+    left: -195px;
+    top: 32px;
+    border: 1px solid #D5D5D5;
+    border-top: none;
+    
+}
+
+.manu-bar ul li:hover > .sub-manu{
+    display:block;
 }
 
 .options{
@@ -139,7 +167,7 @@ input[name="submit"]{
   width: 20px;
   height: 16px;
   border: none;
-  border-left: 1px solid #000;
+  border-left: 1px solid #d0d0d0;
   outline: none;
   position: relative;
   top: 3px;
@@ -204,6 +232,10 @@ input[name="submit"]{
   box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
   line-height: 2;
   margin: 15px 0;
+}
+
+.button:hover{
+    background-color: #329ACF;
 }
 
 
@@ -281,27 +313,38 @@ input[name="submit"]{
 
   	color: #fff;
 	font-weight: bold;
-  	margin-top: 60px;
+  	margin-top: 50px;
   	display: inline-block;
   	margin-left: 15px;
 }
 
-.details:before{
+.link:before,
+.chart:before,
+.play:before{
     
-    content: url("../assets/icons/Link2.png");
     display: inline-block;
     vertical-align: sub;
     margin-right: 5px;
     transform: scale(.8);
+    vertical-align: middle;
+}
+
+.link:before{
+    
+    content: url("../assets/icons/Link2.png");
+
     
 }
 
-.details:nth-of-type(2):before{
+.chart:before{
+    
     content: url("../assets/icons/icon_copy_6.png");
-    display: inline-block;
-    vertical-align: sub;
-    margin-right: 5px;
-    transform: scale(.8);
+}
+
+.play:before{
+    
+    content: url("../assets/icons/icon.png");
+
 }
 
 
@@ -337,11 +380,11 @@ input[name="submit"]{
 }
 
 .data div{
-    background: url("../assets/icons/Robot.png") no-repeat;
+    background: url("../assets/icons/SMART_MONETIZATION.png") no-repeat;
     width: 100px;
     height: 80px;    
-    background-size: 94px 77px;
-    background-position: 7px 0px;
+    background-size: 122px 78px;
+    background-position: -5px 8px;
 }
 
 .machine div{
@@ -418,6 +461,29 @@ input[name="submit"]{
     margin-left: 0;
 }
 
+.events a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.events a .icons{
+  background: url("../assets/icons/calendar-icon.png") no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    margin-right: 7px;
+    vertical-align: bottom;
+}
+
+.events:first-of-type .icons{
+    background: url("../assets/icons/Shape1.png") no-repeat;
+    width: 25px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
 .blured-recs{
 
 	height: 200px;
@@ -475,20 +541,7 @@ input[name="submit"]{
   	display: block;
 }
 
-.events a{
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  padding-top: 10px;
-}
 
-.events a .icons:nth-of-type(1){
-  background: url("../assets/icons/calendar-icon.png") no-repeat;
-    display: inline-block;
-    width: 20px;
-    height: 22px;
-    margin-right: 7px;
-}
 
 /*------------------------------------stories-section-----------------------------------*/
 
@@ -509,6 +562,7 @@ input[name="submit"]{
 	width: 334px;
     display: inline-block;
     margin-left: 3.5px;
+
   
 }
 
@@ -534,6 +588,31 @@ input[name="submit"]{
 	height: 155px;
 	background-color: #fff;
 	padding: 12px;
+}
+
+.mask{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    transition: top 0.5s;
+}
+
+.masking{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.masking:hover > .mask{
+    top: -179px;
+}
+
+.undermask{
+    height: 155px;
+    background-color: #3398cc;
+    padding: 12px;
+
 }
 
 .representives > img{
@@ -599,11 +678,31 @@ input[name="submit"]{
     width: 106px;
     height: 90px;
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .rep-logo:first-of-type{
 
 	margin-left: 0;
+}
+
+
+.playbackground{
+    background: url("../assets/icons/play_background_logo.jpg");
+    width:100%;
+    height: 100%;
+
+}
+
+.logos-wrapp{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    transition: top 0.5s;
+
 }
 
 .stories-logo{
@@ -614,6 +713,10 @@ input[name="submit"]{
   left: 0;
   bottom: 0;
   margin: auto;
+}
+
+.rep-logo:hover > .logos-wrapp{
+    top: -90px;    
 }
 
 .cycle,
@@ -672,6 +775,10 @@ input[name="submit"]{
 
 .footer-navigation a{
     color: #fff;
+}
+
+.footer-navigation a:hover{
+    text-decoration: underline;
 }
 
 .copyrights,
@@ -776,6 +883,16 @@ margin-top: 10px;
   background: linear-gradient(0deg, #2991c5 0%, #46b5ec 100%);
   box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.28);
   
+}
+
+.email-form input:nth-of-type(2):hover{
+    
+  background: -webkit-linear-gradient(0deg, #5DC8FD 0%, #46b5ec 100%);
+  background: -moz-linear-gradient(0deg, #5DC8FD 0%, #46b5ec 100%);
+  background: -o-linear-gradient(0deg, #5DC8FD 0%, #46b5ec 100%);
+  background: -ms-linear-gradient(0deg, #5DC8FD 0%, #46b5ec 100%);
+  background: linear-gradient(0deg, #5DC8FD 0%, #46b5ec 100%);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.28);
 }
 
 ul.social-networks{
